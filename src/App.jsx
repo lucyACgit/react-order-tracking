@@ -1,6 +1,6 @@
-import './App.css'
-import { Timeline } from './components/timeline/Timeline'
-import { timeline } from './data/timeline'
+import "./App.css";
+import { Timeline } from "./components/timeline/Timeline";
+import { timeline } from "./data/timeline";
 
 /*
 
@@ -14,9 +14,12 @@ import { timeline } from './data/timeline'
 function App() {
   return (
     <main>
-      <Timeline timelineData={timeline} />
+      <Timeline timelineData={timeline}>
+        <h1>Order Tracking</h1>
+        <p>See your tracking below</p>
+      </Timeline>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;

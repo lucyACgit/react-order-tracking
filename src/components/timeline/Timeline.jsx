@@ -1,8 +1,9 @@
 import { TimelineNode } from "./TimelineNode";
 
-export const Timeline = ({ timelineData }) => {
+export const Timeline = ({ timelineData, children }) => {
   return (
     <section className="timeline-section">
+      <header className="page-intro">{children}</header>
       <div className="timeline-container">
         {timelineData.map((item) => (
           <TimelineNode key={item.id} data={item}>
@@ -14,5 +15,5 @@ export const Timeline = ({ timelineData }) => {
         ))}
       </div>
     </section>
-  )
-}
+  );
+};

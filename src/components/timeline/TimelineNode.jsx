@@ -1,11 +1,13 @@
-import { TimelineIcon } from './TimelineIcon';
+import { Children } from "react";
+import { TimelineIcon } from "./TimelineIcon";
 
-export const TimelineNode = ({ data }) => {
+export const TimelineNode = ({ data, children }) => {
   const { icon } = data;
 
   return (
     <article className="timeline-node">
-      <TimelineIcon />
+      <TimelineIcon icon={icon} />
+      {children}
     </article>
-  )
-}
+  );
+};

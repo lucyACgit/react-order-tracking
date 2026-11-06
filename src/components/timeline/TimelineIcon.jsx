@@ -1,4 +1,10 @@
-import { Check, CircleQuestionMark, Package, Pencil, Truck } from 'lucide-react';
+import {
+  Check,
+  CircleQuestionMark,
+  Package,
+  Pencil,
+  Truck,
+} from "lucide-react";
 
 const iconMap = {
   check: Check,
@@ -14,5 +20,5 @@ export const TimelineIcon = ({ icon }) => {
     <div className="timeline-icon">
       <Icon aria-hidden="true" size={24} />
     </div>
-  )
-}
+  );
+};
